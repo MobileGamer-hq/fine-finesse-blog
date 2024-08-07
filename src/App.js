@@ -1,34 +1,33 @@
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 import './Styles/Pages.css';
-import { useState } from 'react';
 import Home from './Pages/Home';
 import About from './Pages/About';
-import Contact from './Pages/Contact'; // Import other pages as needed
-import Services from './Pages/Services'; // Import other pages as needed
+import Contact from './Pages/Contact';
+import Services from './Pages/Services';
+import Post from './Pages/Post'; // Make sure to import the Post component
+import LogIn from './Pages/LogIn';
+import UploadPost from './Pages/UploadPost';
+
 
 function App() {
-  const [currentPage, setCurrentPage] = useState();
-
-  const renderPage = () => {
-    switch (currentPage) {
-      case "Home":
-        return <Home />;
-      case "About":
-        return <About />;
-      case "Contact":
-        return <Contact />;
-      case "Services":
-        return <Services />;
-      default:
-        return <Home />; // Default to Home or any other default page
-    }
-  };
-
   return (
-    <div className="App">
-      {renderPage()}
-    </div>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/post/:id" element={<Post />} /> {/* Updated route */}
+          {/* Add more routes as needed */}
+
+
+          <Route path='login' element={<LogIn/>}/>
+          <Route path='upload' element={<UploadPost/>}/>
+        </Routes>
+      </div>
   );
 }
 

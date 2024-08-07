@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Post({ content, title }) {
+function PostMini({ content, title }) {
     return (
         <div style={{
             display: "flex",
@@ -18,4 +18,4 @@ function Post({ content, title }) {
     )
 }
 
-export default Post
+export default PostMini

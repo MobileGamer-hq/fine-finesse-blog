@@ -1,9 +1,16 @@
-import React from 'react'
+// Post.js
+import React from 'react';
+import { useParams } from 'react-router-dom';
 
-function Post() {
+const Post = () => {
+  const { id } = useParams();
+
   return (
-    <div>Post</div>
-  )
-}
+    <div>
+      <h1>Post ID: {id}</h1>
+      {/* Fetch and display the post content based on the ID */}
+    </div>
+  );
+};
 
-export default Post
+export default Post;
