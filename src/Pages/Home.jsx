@@ -8,14 +8,12 @@ function Home() {
             <section style={{
 
             }}>
-                <div></div>
+
                 <div>
-                    <div>
-                        <div>Fine Finesse</div>
-                        <div></div>
-                    </div>
+                    <div>Fine Finesse</div>
                     <div></div>
                 </div>
+                <div></div>
             </section>
             <section>
                 <div>Recent Posts</div>

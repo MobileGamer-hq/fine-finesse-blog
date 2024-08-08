@@ -1,10 +1,54 @@
+:root {
+  /* Button Sizes */
+  --button-large-height: 56px;
+  --button-large-padding: 16px 32px;
+  --button-large-font-size: 18px;
+  
+  --button-medium-height: 48px;
+  --button-medium-padding: 12px 24px;
+  --button-medium-font-size: 16px;
+  
+  --button-small-height: 40px;
+  --button-small-padding: 8px 16px;
+  --button-small-font-size: 14px;
+
+  /* Font Sizes */
+  --font-large-h1: 36px;
+  --font-large-h2: 30px;
+  --font-large-h3: 24px;
+  --font-large-body: 18px;
+  --font-large-small: 16px;
+  
+  --font-medium-h1: 32px;
+  --font-medium-h2: 26px;
+  --font-medium-h3: 20px;
+  --font-medium-body: 16px;
+  --font-medium-small: 14px;
+  
+  --font-small-h1: 28px;
+  --font-small-h2: 22px;
+  --font-small-h3: 18px;
+  --font-small-body: 14px;
+  --font-small-small: 12px;
+
+  /* Spacing */
+  --spacing-large-margin: 32px;
+  --spacing-large-padding: 24px;
+  
+  --spacing-medium-margin: 24px;
+  --spacing-medium-padding: 16px;
+  
+  --spacing-small-margin: 16px;
+  --spacing-small-padding: 12px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 
-  /* background-color: #3C3B3D; */
+  background-color: #3C3B3D;
   /* background: linear-gradient(to right, #252525, #3C3B3D); */
   /* background: radial-gradient(circle, #252525, #303031); */
   /* background-color: #252525; */
@@ -13,7 +57,45 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+::-webkit-scrollbar {
+  display: inline-block;
+}
+
+.text-light {
+  color: rgba(225, 255, 255, 0.6);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.nav-button{
+  background: rgba(47, 47, 47, 0.3);
+  display: block;
+  padding: 0.7rem, 1.7rem;
+  position: fixed;
+  left:1rem;
+  top: 1rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+
+}
+
+.nav-button{
+  padding: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+  color: var(--color-light);
+  font-size: 1.1rem;
+}
+
+.nav-button:hover{
+  background: rgba(0,0,0,0.3);
+
+}
+
+.nav-button.active{
+  background: var(--color-bg);
+  color: var(--color-white);
 }
