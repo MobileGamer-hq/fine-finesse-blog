@@ -13,37 +13,13 @@ export const sizes = {
     small: {
       height: '40px',
       padding: '8px 16px',
-      fontSize: '14px',
+      fontSize: '18px',
     },
   },
   font: {
-    large: {
-      headings: {
-        h1: '36px',
-        h2: '30px',
-        h3: '24px',
-      },
-      body: '18px',
-      small: '16px',
-    },
-    medium: {
-      headings: {
-        h1: '32px',
-        h2: '26px',
-        h3: '20px',
-      },
-      body: '16px',
-      small: '14px',
-    },
-    small: {
-      headings: {
-        h1: '28px',
-        h2: '22px',
-        h3: '18px',
-      },
-      body: '14px',
-      small: '12px',
-    },
+    large: "80px",
+    medium: "28px",
+    small: "20px",
   },
   spacing: {
     large: {
@@ -65,3 +41,10 @@ export const sizes = {
     small: "1.5rem"
   }
 };
+
+export const colors = {
+  primary: "gold",
+  secondary: "",
+  tertiary: "",
+  bg: "black"
+}

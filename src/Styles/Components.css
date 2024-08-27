@@ -1,0 +1,13 @@
+.button {
+
+}
+
+.button:hover{
+    background-color:rgb(169, 143, 0);
+    cursor: pointer;
+}
+
+.button-outline:hover {
+   color: rgb(169, 143, 0);
+   cursor: pointer;
+}
