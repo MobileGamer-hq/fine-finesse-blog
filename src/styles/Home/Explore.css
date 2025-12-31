@@ -1,0 +1,109 @@
+/* Explore Section */
+.explore {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+/* Header */
+.explore-header h2 {
+    font-size: clamp(1.8rem, 4vw, 2rem);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.explore-header p {
+    color: var(--color-sub-text);
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+    margin-bottom: 50px;
+}
+
+/* Grid */
+.explore-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+/* Card */
+.explore-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 16px;
+    padding: 40px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.explore-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Icon */
+.explore-icon {
+    font-size: 28px;
+    color: #111;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Text */
+.explore-card h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.explore-card p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* ---------------- TABLET ---------------- */
+@media (max-width: 1024px) {
+    .explore-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+    }
+}
+
+/* ---------------- MOBILE ---------------- */
+@media (max-width: 768px) {
+    .explore-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .explore-header h2 {
+        font-size: clamp(1.5rem, 5vw, 1.8rem);
+    }
+
+    .explore-header p {
+        font-size: clamp(0.85rem, 3vw, 0.95rem);
+    }
+}
+
+/* ---------------- SMALL PHONES ---------------- */
+@media (max-width: 480px) {
+    .explore-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .explore-card {
+        padding: 30px 15px;
+    }
+
+    .explore-icon {
+        font-size: 24px;
+    }
+
+    .explore-card h3 {
+        font-size: 15px;
+    }
+
+    .explore-card p {
+        font-size: 13px;
+    }
+}

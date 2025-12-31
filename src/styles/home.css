@@ -1,0 +1,10 @@
+.title {
+    font-size: 32px;
+    font-weight: 50;
+    background: linear-gradient(90deg,  var(--color-primary), var(--color-secondary) );
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the rest of the text transparent */
+
+}
+
+

@@ -1,0 +1,217 @@
+/* FOOTER NEWSLETTER */
+.newsletter {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: #fff;
+    text-align: center;
+    padding: 90px 12%;
+}
+
+.newsletter-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: var(--color-primary-variant);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+}
+
+.newsletter h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    margin-bottom: 16px;
+    color: var(--color-primary-variant);
+}
+
+.newsletter p {
+    max-width: 700px;
+    margin: 0 auto 35px;
+    line-height: 1.6;
+    opacity: 0.95;
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+.newsletter-form input {
+    padding: 14px 18px;
+    border-radius: 30px;
+    border: none;
+    flex: 1 1 250px;
+    max-width: 400px;
+    max-height: 50px;
+    outline: none;
+    background: var(--color-primary-variant);
+}
+
+.newsletter-form button {
+    padding: 14px 26px;
+    border-radius: 30px;
+    border: none;
+    background: var(--color-primary-variant);
+    color: var(--color-primary);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.newsletter small {
+    opacity: 0.9;
+    font-size: 13px;
+}
+
+/* FOOTER MAIN */
+.footer-main {
+    background: var(--color-text);
+    color: var(--color-sub-text-variant);
+    padding: 70px 10%;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+/* Brand */
+.footer-brand h3 {
+    font-size: 28px;
+    color: var(--color-secondary);
+    margin-bottom: 14px;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: var(--color-sub-text-variant);
+}
+
+.socials {
+    display: flex;
+    gap: 14px;
+    font-size: 18px;
+}
+
+.social-icon {
+    background: var(--color-sub-text);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+/* Footer links */
+.footer-main h4 {
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: var(--color-white);
+}
+
+.footer-main ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-main li {
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: var(--color-sub-text-variant);
+    cursor: pointer;
+}
+
+.footer-main li:hover {
+    color: var(--color-primary);
+}
+
+.contact li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/* ---------------- MOBILE ---------------- */
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .newsletter {
+        padding: 50px 5%; /* reduced padding for smaller screens */
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        gap: 10px; /* less gap between input and button */
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px 14px; /* reduce height */
+        font-size: 0.9rem;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+
+    .footer-main li {
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+
+    .footer-brand p {
+        font-size: 13px;
+    }
+
+    .footer-brand .logo-container {
+        width: 60px; /* reduce logo size */
+        height: 60px;
+        margin: 0 auto 10px;
+    }
+
+    .footer-brand .logo-container img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* ---------------- SMALL PHONES ---------------- */
+@media (max-width: 480px) {
+    .newsletter {
+        padding: 40px 4%;
+    }
+
+    .newsletter h2 {
+        font-size: 1.4rem; /* smaller heading */
+    }
+
+    .newsletter p {
+        font-size: 0.85rem; /* smaller text */
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+        padding: 8px 12px; /* even smaller height */
+    }
+
+    .footer-brand h3 {
+        font-size: 20px;
+    }
+
+}

@@ -1,0 +1,55 @@
+.Featured {
+    width: 100%;
+    padding: 4rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Header text */
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header-container .title {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    margin-bottom: 0.3rem;
+}
+
+.header-container p {
+    color: var(--color-sub-text);
+    font-size: 0.95rem;
+}
+
+/* Featured article wrapper */
+.featured-article {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* ---------------- TABLET ---------------- */
+@media (max-width: 768px) {
+    .Featured {
+        padding: 3rem 1.2rem;
+    }
+
+    .header-container {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* ---------------- MOBILE ---------------- */
+@media (max-width: 480px) {
+    .Featured {
+        padding: 2.5rem 1rem;
+    }
+}

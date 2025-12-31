@@ -1,0 +1,96 @@
+/* Fixed header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+/* Prevent content overlap */
+body {
+    padding-top: 70px;
+}
+
+.logo {
+    height: 30px;
+}
+
+/* Tabs (desktop) */
+.tabs-container {
+    display: flex;
+    align-items: center;
+}
+
+.tabs-container a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.tabs-container a:hover {
+    color: var(--color-primary);
+}
+
+/* Hamburger hidden on desktop */
+.hamburger {
+    display: none;
+}
+
+/* ------------------ MOBILE ------------------ */
+@media (max-width: 768px) {
+    .tabs-container {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+        padding: 1.5rem 0;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+        /* hidden by default */
+        transform: translateY(-150%);
+        transition: transform 0.3s ease;
+    }
+
+    .tabs-container.open {
+        transform: translateY(0);
+    }
+
+    .tabs-container a {
+        margin: 0;
+        font-size: 1.1rem;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+
+/*Tags*/
+.tag-container {
+    color: var(--color-primary);
+    background-color: var(--color-primary-variant);
+    padding: 0rem 0.7rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+}
+
+
+.tag-text {
+    background: linear-gradient(90deg,  var(--color-primary), var(--color-secondary) );
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the rest of the text transparent */
+}
